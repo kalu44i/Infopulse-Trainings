@@ -7,6 +7,7 @@ import java.util.Set;
 
 /**
  * Created by Nick Veremeichyk on 2/18/15.
+ * This semaphore is my realization.
  */
 public class MySemaphore {
     private final static int COUNTER_CONST = 3;

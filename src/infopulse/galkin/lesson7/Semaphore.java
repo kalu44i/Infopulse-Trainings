@@ -3,7 +3,8 @@ package infopulse.galkin.lesson7;
 import java.util.*;
 
 /**
- * Created by apple on 2/14/15.
+ * Created by Nick Veremeichyk on 2/14/15.
+ * Thу realization of Semaphore with Galkin.
  */
 public class Semaphore {
     int value;
@@ -39,17 +40,12 @@ public class Semaphore {
 
 
     public void release() {
-//        Thread t;
         synchronized (this) {
             if (!q.contains(Thread.currentThread())) {
                 throw new IllegalStateException();
             }
             q.remove(Thread.currentThread());
                 value++;
-
-//            t = sleepThreads.poll();
-
-
                 this.notify();
         }
 

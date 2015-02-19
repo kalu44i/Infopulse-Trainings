@@ -4,7 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Created by apple on 1/24/15.
+ * Created by Nick Veremeichyk on 1/24/15.
+ * Typical pattern of Producer-Consumer problem
  */
 class Producer implements Runnable {
     Queue q;

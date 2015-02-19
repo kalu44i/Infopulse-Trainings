@@ -6,7 +6,8 @@ import java.util.*;
 import java.util.Queue;
 
 /**
- * Created by apple on 2/7/15.
+ * Created by Nick Veremeichyk on 2/7/15.
+ * Restaurant problem with realization of Producer-Consumer pattern
  */
 public class Restoraunt_Producer_Consumer {
     static class Client implements Runnable {
@@ -14,15 +15,7 @@ public class Restoraunt_Producer_Consumer {
         Queue cake;
         Queue coffe;
 
-//        HashMap<String, Boolean> status;
-
         public Client(Queue soup, Queue cake, Queue coffe) {
-//            {
-//                status = new HashMap<String, Boolean>(3);
-//                status.put("soup", false);
-//                status.put("cake", false);
-//                status.put("coffe", false);
-//            }
 
             this.soup = soup;
             this.cake = cake;
